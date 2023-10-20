@@ -1,57 +1,47 @@
-body {
-    background-color: #054fb9;
-    color: white;
-}
-
-nav {
-    border: 2px solid black;
-}
-
-nav a {
-    background-color: black;
-    padding: 5px;
-    margin: 20px;
-}
-
-a {
-    text-align: underline;
-    border: blue;
-}
-
-#skip {
-    position: absolute;
-    left: -500px;
-}
-
-#skip:focus {
-    left: 900px;
+main {
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
-    font: 70px 'Open Sans';
+    font-size: 50px;
+    text-align: start;
     font-weight: bold;
+}
+
+/* Mobile Nav Bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  li a {
+    display: block;
+    color: white;
     text-align: center;
-}
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+    text-decoration: underline;
+  }
 
-h2, h3 {
-    font: 30px Arial;
-    font-weight: bold;
-    color: #00bf7d;
-}
-
-p {
-    line-height: 1.25;
-}
-
-img {
-    border-style: solid;
-    border-width: 5px;
-    padding: 10px;
-    margin: 20px;
-    border-top-right-radius: 30px;
-}
-
-li {
-    display: inline-block;
-    margin-left: 50px;
-}
+  /* I used the W3Schools navbar code to make the navbar. I changed the items in the bar and added underline to the active page. */
