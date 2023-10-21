@@ -9,6 +9,18 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 30px;
+    text-align: start;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    text-align: start;
+    font-weight: bold;
+}
+
 /* Mobile Nav Bar */
 
 ul {
@@ -40,8 +52,25 @@ ul {
   }
   
   .active {
-    background-color: #04AA6D;
+    background-color: blue;
     text-decoration: underline;
   }
 
-  /* I used the W3Schools navbar code to make the navbar. I changed the items in the bar and added underline to the active page. */
+  /* Card Styling */
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+    border-radius: 5px;
+  }
+  
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  /* I used the W3Schools navbar code to make the navbar. I changed the items in the bar and added underline to the active page. Finally, I changed the color of the selected element to blue.*/
