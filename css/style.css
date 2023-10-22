@@ -73,6 +73,11 @@ li a:hover:not(.active) {
   margin: 0 auto;
 }
 
+.card p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 @media screen and (max-width: 600px) {
   .card {
     width: 80%;
@@ -182,5 +187,32 @@ img {
     display: none;
   }
 }
+
+/* Skip link */
+
+#skip {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: grey;
+  color: #fff;
+  border-radius: 4px;
+  transition: top 0.3s ease;
+  text-decoration: none;
+  z-index: 1000; /* ensures the link appears above other content */
+}
+
+#skip:focus {
+  top: 10px; /* Position where you want the link to appear when focused */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #skip {
+      transition: none;
+  }
+}
+
 
 /* I used the W3Schools navbar code to make the navbar. I changed the items in the bar and added underline to the active page. Finally, I changed the color of the selected element to blue.*/
