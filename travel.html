@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
 </head>
 
@@ -9,37 +14,56 @@
     <a href="#main">Skip to Main Content</a>
     <nav>
         <ul>
-            <li><a href="index.html">Home/Pets</a></li>
-            <li><a href="travel.html">Home/Travel</a></li>
-            <li><a href="recipes.html">Home/Recipes</a></li>
+            <ul>
+                <div class="topnav" id="myTopnav">
+                    <li><a href="index.html">Home/Pets</a></li>
+                    <li><a href="travel.html" class="active">Home/Travel</a></li>
+                    <li><a href="recipes.html">Home/Recipes</a></li>
+                </div>
+            </ul>
         </ul>
     </nav>
-    <header>
-        <h1 id="main">Travel</h1>
-    </header>
+
     <main>
         <div>
+            <header>
+                <h1 id="main">Travel</h1>
+            </header>
+
             <h2> Mexico City, Mexico</h2>
 
-            <img src="images/zocalo_mexico_city.gif" alt="Zocalo" width="400">
+            <div class="card">
+                <img class="still-image" src="images/palacio_de_bellas_artes.jpg" alt="Bellas Artes" width="100%">
+                <img class="motion-image" src="images/zocalo_mexico_city.gif" alt="Zocalo" width="100%">
+
+                <div class="container">
+
+                    <p style="font-weight: bold;">
+                        Geographical Location: North America
+                    </p>
+                    <br>
+                    <p>
+                        Mexico City is the capital of Mexico. The city is full of Museums that vary from history, art,
+                        and even the history of the Mexican coin. In 2020 the <a
+                            href="https://www.statista.com/statistics/1038080/mexico-city-total-population/">Mexico city
+                            total
+                            population</a>. was about 9.2 million
+                        The city is 571 miles squared
+                    </p>
+                    <br>
+                    <p>
+                        For tourists, there are places like an amusement park called Feria de Chapultepec and giant zoo
+                        Zoológico de Chapultepec that are a must visit. In the photo gallery there are also major
+                        attractions to
+                        visit.
+                    </p>
+                </div>
+            </div>
+
+
             <br>
-            <img src="images/palacio_de_bellas_artes.jpg" alt="Bellas Artes" width="400">
             <br>
-            <h3>
-                Geographical Location: North America
-            </h3>
-            <p>
-                Mexico City is the capital of Mexico. The city is full of Museums that vary from history, art,
-                and even the history of the Mexican coin. In 2020 the <a
-                    href="https://www.statista.com/statistics/1038080/mexico-city-total-population/">Mexico city total
-                    population</a>. was about 9.2 million
-                The city is 571 miles squared
-            </p>
-            <p>
-                For tourists, there are places like an amusement park called Feria de Chapultepec and giant zoo
-                Zoológico de Chapultepec that are a must visit. In the photo gallery there are also major attractions to
-                visit.
-            </p>
+
 
             <h3>Photo Gallery</h3>
             <img src="images/castillo_de_chapultepec.jpg" alt="A castle, Castillo de Chapultepec, in Mexico City"
@@ -164,9 +188,22 @@
                 Geographical Location: North America
             </h3>
             <p>
-                On October 8, 1871, the Great Chicago Fire occurred destroying many buildings, miles of street, and leaving one-third of the city’s population homeless. The result of this was the “Great Rebuilding” which was a time period of heightened level of construction, new styles of architecture, innovative buildings, and sprouting economic growth. More than one hundred years ago, the world’s first double-deck trunnion bascule bridge opened on West Lake street. The towers and buildings around this bridge are different types of corporate offices, firms, business centers, restaurants, stores, apartments, condominiums, and hotels along with parks and tourist attractions. </p>
+                On October 8, 1871, the Great Chicago Fire occurred destroying many buildings, miles of street, and
+                leaving one-third of the city’s population homeless. The result of this was the “Great Rebuilding” which
+                was a time period of heightened level of construction, new styles of architecture, innovative buildings,
+                and sprouting economic growth. More than one hundred years ago, the world’s first double-deck trunnion
+                bascule bridge opened on West Lake street. The towers and buildings around this bridge are different
+                types of corporate offices, firms, business centers, restaurants, stores, apartments, condominiums, and
+                hotels along with parks and tourist attractions. </p>
             <p>
-                What makes Chicago unique compared to all the other cities in the United States is that it has the most bridges, it inspired Gotham City, world renowned pieces of art, skyscrapers with multiple architectural styles, and the flow of the river is reversed. What once was a rail yard and parking lot, transformed by Mayor Richard M. Daley to become the Millenium Park to celebrate the passage of the second millennium. The Navy Pier was created with the intention of being a shipping and recreation facility and later evolved into premiere entertainment and exposition center. Due to the anti-Chinese sentiment and Chinese immigrants escaping violence, the Chinatown Square opened in 1993 from the efforts of Chinese activists demanding more land.
+                What makes Chicago unique compared to all the other cities in the United States is that it has the most
+                bridges, it inspired Gotham City, world renowned pieces of art, skyscrapers with multiple architectural
+                styles, and the flow of the river is reversed. What once was a rail yard and parking lot, transformed by
+                Mayor Richard M. Daley to become the Millenium Park to celebrate the passage of the second millennium.
+                The Navy Pier was created with the intention of being a shipping and recreation facility and later
+                evolved into premiere entertainment and exposition center. Due to the anti-Chinese sentiment and Chinese
+                immigrants escaping violence, the Chinatown Square opened in 1993 from the efforts of Chinese activists
+                demanding more land.
             </p>
 
             <h3>Photo Gallery</h3>
@@ -176,21 +213,27 @@
             <p>Cloud Gate is under construction for pavers replacement and accessibility upgrade to the plaza.</p>
 
             <img src="images/travel/chicago/chicago_millenium_park.webp"
-                alt="The design of this huge amphitheater is billowing headdress composed of stainless-steel ribbons connected with crisscrossing steel pipes overhead the Great Lawn. " width="400">
-            <p>Jay Pritzker Pavilion is a bandshell style venue in Millenium Park that features concerts, events, and live shows.</p>
+                alt="The design of this huge amphitheater is billowing headdress composed of stainless-steel ribbons connected with crisscrossing steel pipes overhead the Great Lawn. "
+                width="400">
+            <p>Jay Pritzker Pavilion is a bandshell style venue in Millenium Park that features concerts, events, and
+                live shows.</p>
             <img src="images/travel/chicago/chicago_grant_park.jpg"
-                alt="At the center of Grant Park features a massive fountain that offers a computerized light and music water show." width="400">
-            <p>Located in Grant Park is the Clarence F. Buckingham Memorial Fountain which is one of the biggest fountains in the world.</p>
+                alt="At the center of Grant Park features a massive fountain that offers a computerized light and music water show."
+                width="400">
+            <p>Located in Grant Park is the Clarence F. Buckingham Memorial Fountain which is one of the biggest
+                fountains in the world.</p>
 
             <img src="images/travel/chicago/chicago_navy_pier.jpg"
-                alt="Large ferris wheel glowing with pinkish purple LED lighting and a luminous carousel."
-                width="400">
-            <p>The Navy Pier is on the shoreline of Lake Michigan and it features nostalgic fairground rides, cultural attractions, museums, theater, dining, shopping, and more.</p>
+                alt="Large ferris wheel glowing with pinkish purple LED lighting and a luminous carousel." width="400">
+            <p>The Navy Pier is on the shoreline of Lake Michigan and it features nostalgic fairground rides, cultural
+                attractions, museums, theater, dining, shopping, and more.</p>
 
 
-            <img src="images/travel/chicago/chicago_chinatown.jpeg" alt="This outdoor mall bridges traditional Chinese imperial court architecture with teal roofs and posts and red iron railings for the pagodas, bridges, and storefronts."
+            <img src="images/travel/chicago/chicago_chinatown.jpeg"
+                alt="This outdoor mall bridges traditional Chinese imperial court architecture with teal roofs and posts and red iron railings for the pagodas, bridges, and storefronts."
                 width="400">
-            <p>Chinatown Square is a two-level retail and commercial space that includes extensive shops, cafes, dim sum restaurants, and teahouses.</p>
+            <p>Chinatown Square is a two-level retail and commercial space that includes extensive shops, cafes, dim sum
+                restaurants, and teahouses.</p>
             <!-- Brian Zhang -->
         </div>
         <div>
@@ -204,33 +247,44 @@
                 Geographical Location: North America
             </h3>
             <p>
-                Sequoia National Park is a large forest located in the Sierra Nevada mountain range in California. It is famous for its gigantic sequoia and redwood trees, as well as its underground Crystal Cave. The park is a well-known attraction to many tourists, receiving more than a million visitors annually. In addition to its collection of giant trees, Sequoia National Park is also home to thousands of prevalent flora and fauna.</p>
+                Sequoia National Park is a large forest located in the Sierra Nevada mountain range in California. It is
+                famous for its gigantic sequoia and redwood trees, as well as its underground Crystal Cave. The park is
+                a well-known attraction to many tourists, receiving more than a million visitors annually. In addition
+                to its collection of giant trees, Sequoia National Park is also home to thousands of prevalent flora and
+                fauna.</p>
             <p>
-                Perhaps the most famous feature of Sequoia National Park is the General Sherman tree – the largest tree in the world. Measuring in at 275 feet tall, the tree towers over the surrounding landscape and the people who come to view it. As of today, the General Sherman tree is estimated to be around 2200 years old.
+                Perhaps the most famous feature of Sequoia National Park is the General Sherman tree – the largest tree
+                in the world. Measuring in at 275 feet tall, the tree towers over the surrounding landscape and the
+                people who come to view it. As of today, the General Sherman tree is estimated to be around 2200 years
+                old.
             </p>
 
             <h3>Photo Gallery</h3>
             <img src="images/travel/sequoia/sequoia_tunnel_tree.jpg"
-                alt="A large sequoia tree with a tunnel through it that people can walk through"
-                width="400">
-            <p>This large sequoia tree had a tunnel cut through it to make way for a trail. The size comparison with the people demonstrates the giant size of the trees in the forest.</p>
+                alt="A large sequoia tree with a tunnel through it that people can walk through" width="400">
+            <p>This large sequoia tree had a tunnel cut through it to make way for a trail. The size comparison with the
+                people demonstrates the giant size of the trees in the forest.</p>
 
             <img src="images/travel/sequoia/sequoia_trail_tree.jpg"
                 alt="One of the trails in the national park alongside an immense sequoia tree." width="400">
-            <p>This trail in Sequoia National Park houses a giant sequoia tree right next to the path on which people can hike. The giant trees are really a spectacle compared to the typical trees you see every day.</p>
+            <p>This trail in Sequoia National Park houses a giant sequoia tree right next to the path on which people
+                can hike. The giant trees are really a spectacle compared to the typical trees you see every day.</p>
             <img src="images/travel/sequoia/sequoia_general_sherman.jpg"
-                alt="A gigantic tree in the center of the photo that towers over the other trees and landscape surrounding it." width="400">
-            <p>Pictured here is the General Sherman tree, the largest tree in the world. The sheer size and height of the tree is large enough to even be intimidating to people who are seeing it for the first time. It truly towers over the rest of the landscape around it.</p>
+                alt="A gigantic tree in the center of the photo that towers over the other trees and landscape surrounding it."
+                width="400">
+            <p>Pictured here is the General Sherman tree, the largest tree in the world. The sheer size and height of
+                the tree is large enough to even be intimidating to people who are seeing it for the first time. It
+                truly towers over the rest of the landscape around it.</p>
 
             <img src="images/travel/sequoia/sequoia_crystal_cave.JPG"
-                alt="A cave with intricate stalactite and stalagmite formations."
-                width="400">
-            <p>Another well-known attraction of Sequoia National Park is its underground Crystal Cave. The cave exhibits intricate formations of stalactites and stalagmites throughout the underground of the forest.</p>
+                alt="A cave with intricate stalactite and stalagmite formations." width="400">
+            <p>Another well-known attraction of Sequoia National Park is its underground Crystal Cave. The cave exhibits
+                intricate formations of stalactites and stalagmites throughout the underground of the forest.</p>
 
 
-            <img src="images/travel/sequoia/sequoia_bear.jpg" alt="A black bear pictured in the forest."
-                width="400">
-            <p>In addition to its forests and caves, Sequoia National Park is also home to lots of wildlife, including this black bear. If you’re not careful with your stuff, they might even steal your food!</p>
+            <img src="images/travel/sequoia/sequoia_bear.jpg" alt="A black bear pictured in the forest." width="400">
+            <p>In addition to its forests and caves, Sequoia National Park is also home to lots of wildlife, including
+                this black bear. If you’re not careful with your stuff, they might even steal your food!</p>
             <!-- Brian Wu -->
         </div>
         <div>
@@ -244,33 +298,39 @@
                 Geographical Location: Asia
             </h3>
             <p>
-                Singapore is a country located at the southern end of Malaysia. Despite the fact that Singapore is only 281.3 square miles and has a population of approximately 5.54 million, it has a thriving economy and is a strong player in the global market. </p>
+                Singapore is a country located at the southern end of Malaysia. Despite the fact that Singapore is only
+                281.3 square miles and has a population of approximately 5.54 million, it has a thriving economy and is
+                a strong player in the global market. </p>
             <p>
-                Singapore is famous for its city skyline, with a few landmarks such as the Marina Bay Sands Resort, Raffles Hotel, and the Esplanade. Additionally, Singapore has the highest rated airport in the world, with Changi Airport featuring many retail and dining options.
+                Singapore is famous for its city skyline, with a few landmarks such as the Marina Bay Sands Resort,
+                Raffles Hotel, and the Esplanade. Additionally, Singapore has the highest rated airport in the world,
+                with Changi Airport featuring many retail and dining options.
             </p>
 
             <h3>Photo Gallery</h3>
-            <img src="images/travel/singapore/singapore_hawker.png"
-                alt="Hawker food centres in Singapore"
-                width="400">
-            <p>Hawker centres are a staple in singaporeans food culture. affordable food stalls run by elderly experienced cooks. You can find anything from any of the 4 main cultures in singapore (chinese, malay, indian and “western”)</p>
+            <img src="images/travel/singapore/singapore_hawker.png" alt="Hawker food centres in Singapore" width="400">
+            <p>Hawker centres are a staple in singaporeans food culture. affordable food stalls run by elderly
+                experienced cooks. You can find anything from any of the 4 main cultures in singapore (chinese, malay,
+                indian and “western”)</p>
 
-            <img src="images/travel/singapore/singapore_changi.jpg"
-                alt="Changi Airport water feature" width="400">
-            <p>Changi airport is consistently ranked as the best airport in the world, for its cleanliness, efficiency and shopping/dining options. It’s main feat is Jewel’s water feature.</p>
-            <img src="images/travel/singapore/singapore_gbtb.jpeg"
-                alt="Gardens by the bay supertrees" width="400">
-            <p>These big gardens were built a few years ago and emphasise the idea that singapore is a “Garden City”. The trees light up at night and are a common location for photoshoots, night walks and weddings. </p>
+            <img src="images/travel/singapore/singapore_changi.jpg" alt="Changi Airport water feature" width="400">
+            <p>Changi airport is consistently ranked as the best airport in the world, for its cleanliness, efficiency
+                and shopping/dining options. It’s main feat is Jewel’s water feature.</p>
+            <img src="images/travel/singapore/singapore_gbtb.jpeg" alt="Gardens by the bay supertrees" width="400">
+            <p>These big gardens were built a few years ago and emphasise the idea that singapore is a “Garden City”.
+                The trees light up at night and are a common location for photoshoots, night walks and weddings. </p>
 
             <img src="images/travel/singapore/singapore_mangrove.jpg"
-                alt="Kayaking among mangroves on Pulau Ubin island"
-                width="400">
-            <p>Pulau Ubin is a nature reserve island off the coast of Singapore. It is a popular destination for a day filled with hiking, kayaking among mangroves, biking on nature trails, and observing wildlife like crocodiles, monkeys and wild boar.</p>
+                alt="Kayaking among mangroves on Pulau Ubin island" width="400">
+            <p>Pulau Ubin is a nature reserve island off the coast of Singapore. It is a popular destination for a day
+                filled with hiking, kayaking among mangroves, biking on nature trails, and observing wildlife like
+                crocodiles, monkeys and wild boar.</p>
 
 
-            <img src="images/travel/singapore/singapore_sentosa.jpg" alt="Sandy beaches on Sentosa Island"
-                width="400">
-            <p>Sentosa is an island off the south coast of singapore. It hosts Universal Studios, casinos and beach resorts. It is Singapore’s vacation island. There are lots of white sandy beaches, hikes, beachfront restaurants and other attractions that are visited by tourists and locals alike
+            <img src="images/travel/singapore/singapore_sentosa.jpg" alt="Sandy beaches on Sentosa Island" width="400">
+            <p>Sentosa is an island off the south coast of singapore. It hosts Universal Studios, casinos and beach
+                resorts. It is Singapore’s vacation island. There are lots of white sandy beaches, hikes, beachfront
+                restaurants and other attractions that are visited by tourists and locals alike
             </p>
             <!-- Lily Gong and Alexandra Tan -->
         </div>

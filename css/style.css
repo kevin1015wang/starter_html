@@ -5,7 +5,7 @@ main {
 
 h1 {
   margin-left: 10px;
-    font-size: 50px;
+    font-size: 40px;
     text-align: start;
     font-weight: bold;
 }
@@ -122,5 +122,23 @@ ul {
   border-radius: 5px;   
 }
 
+/* Reduced motion */
+.still-image {
+  display: none;
+}
+
+.motion-image {
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .still-image {
+      display: block;
+  }
+
+  .motion-image {
+      display: none;
+  }
+}
 
   /* I used the W3Schools navbar code to make the navbar. I changed the items in the bar and added underline to the active page. Finally, I changed the color of the selected element to blue.*/
